@@ -25,5 +25,7 @@ modules-right = crypto
 type = custom/script
 exec = ~/.config/polybar/pcrypto.py --base USD --coins btc eth link ltc xrp xmr
 interval = 60
+
+font-0 = "coins:style=Regular;0"
 ```
 more options in `pcrypto.py -h`
