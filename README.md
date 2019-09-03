@@ -23,6 +23,7 @@ modules-right = crypto
 
 [module/crypto]
 type = custom/script
-exec = ~/.config/polybar/pcrypto.py
+exec = ~/.config/polybar/pcrypto.py --base USD --coins btc eth link ltc xrp xmr
 interval = 60
 ```
+more options in `pcrypto.py -h`
