@@ -1,6 +1,7 @@
 # polybar-cryptocurrency
 
 ![pcrypto](https://user-images.githubusercontent.com/21110159/64199525-30750300-ce93-11e9-812b-0eaf94494b1f.png)
+
 A polybar script much like [polybar-crypto](https://github.com/willHol/polybar-crypto).
 It's a great script, but: 
 * I dislike messing with configuration files for small scripts
