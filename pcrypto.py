@@ -35,7 +35,7 @@ for coin in args.coins:
 
     for _unicode, _coin in unicode_dict.items():
         if _coin == coin:
-            icon = chr(int(_unicode, 16))
+            icon = chr(int(_unicode, 16)) if len(_unicode) > 1 else _unicode
             if args.display == "price":
                 sys.stdout.write(f" {icon} {current_price} ")
             if args.display == "percentage":
