@@ -1,4 +1,4 @@
-#!/usr/bin/env python3.6
+#!/usr/bin/env python3
 
 import requests
 import argparse
@@ -25,6 +25,9 @@ with open(f"{home}.config/polybar/coins.svg", "r", encoding="utf-8") as icons:
         unicode, coin = line.strip().split(":")
         unicode_dict[unicode] = coin
 
+if not args.coins:
+    parser.print_help()
+    parser.exit()
 
 for coin in args.coins:
     get = requests.get(
