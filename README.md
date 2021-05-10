@@ -6,7 +6,7 @@
 
 
 A polybar script much like [polybar-crypto](https://github.com/willHol/polybar-crypto).
-It's a great script, but: 
+It's a great script, but:
 * I dislike messing with configuration files for small scripts
 * I feel as if changing what the module displays should be quick
 * [Coinranking's API](https://docs.coinranking.com/public) is much better than CMC, in my opinion (currency symbols)
@@ -14,7 +14,7 @@ It's a great script, but:
 
 ## Setup
 ```
-git clone https://github.com/SplendidX/polybar-cryptocurrency.git
+git clone https://github.com/plinki/polybar-cryptocurrency.git
 
 cd polybar-cryptocurrency && ./setup.sh
 ```
@@ -41,4 +41,3 @@ Icons are fetched from coins.svg, if you'd like to use your own icon for a speci
 ```
 
 more options in `pcrypto.py -h`
-
