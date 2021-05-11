@@ -4,6 +4,9 @@ set -x
 DISTRO=$(lsb_release -i | cut -f 2-)
 
 case $DISTRO in
+    'Manjaro')
+        dir_fonts=/home/$USER/.local/share/fonts/
+        ;;
     'Arch')
         dir_fonts=/home/$USER/.local/share/fonts/
         ;;
@@ -15,10 +18,9 @@ case $DISTRO in
         ;;
 esac
 
-        mkdir $dir_fonts
+mkdir $dir_fonts
 
 dir_polybar=/home/$USER/.config/polybar/
-
 
 cp coins.otf $dir_fonts
 cp -t $dir_polybar pcrypto.py coins.svg
