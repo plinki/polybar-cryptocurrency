@@ -1,10 +1,23 @@
-#!/bin/bash
+#!/bin/sh
 set -x
 
-dir_fonts=~/.fonts
-dir_polybar=~/.config/polybar
+DISTRO=$(lsb_release -i | cut -f 2-)
+
+case $DISTRO in
+    'Arch')
+        dir_fonts=~/.local/share/fonts
+        ;;
+    'Artix')
+        dir_fonts=~./local/share/fonts
+        ;;
+    *)
+        dir_fonts=~/.fonts
+        ;;
+esac
+
+dir_polybar=~/.config/polybar/
 
 mkdir -p $dir_fonts
 
 cp coins.otf $dir_fonts
-cp {pcrypto.py,coins.svg} $dir_polybar
+cp -t $dir_polybar pcrypto.py coins.svg
